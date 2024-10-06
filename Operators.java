@@ -14,7 +14,7 @@ public class Operators { public static void main(String[] args) {
     double mul = num1 * num2;
     System.out.println("The multiplication is : \s");
     System.out.println(mul);
-    float div = (num1/num2);
+    float div = ((float) num1 /num2);
     System.out.println("The division is : \s");
     System.out.println(div);
 
