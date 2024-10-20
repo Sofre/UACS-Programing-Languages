@@ -49,10 +49,10 @@ public class Main {
             throw new IllegalArgumentException("Array cannot be empty");
         }
 
-        Car best = x[0]; // Start with the first car as the best
+        Car best = x[0];
         for (int i = 1; i < x.length; i++) {
-            if (x[i].getBHP() > best.getBHP() && x[i].getPrice() > best.getPrice()) {
-                best = x[i]; // Update best if a car with higher BHP is found
+            if (x[i].getBHP() > best.getBHP() && x[i].getPrice() > best.getPrice() && x[i].getYear()<best.getYear()) {
+                best = x[i];
             }
         }
         return best;

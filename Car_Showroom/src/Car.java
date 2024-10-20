@@ -63,4 +63,8 @@ public class Car {
     public double getPrice() {
         return price;
     }
+
+    public int getYear() {
+        return year;
+    }
 }
