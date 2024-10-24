@@ -1,109 +1,85 @@
 import java.io.InputStream;
 import java.util.Scanner;
+import java.util.Random;
 
 public class Hero {
-    public int health;
-    public int strength;
-    public int intelligence;
-    public int dexterity;
-    public int agility;
+    private int health;
+    private int strength;
+    private int intelligence;
+    private int dexterity;
+    private int agility;
+    private double damage;
 
-    public String Hero_Name;
-    public String Title;
+    private String heroName;
+    private String title;
 
 
-
-    public Hero(int health, int strength, int intelligence, int dexterity, int agility,String Hero_Name,String Title) {
-        this.health = health;
-        this.strength = strength;
-        this.intelligence = intelligence;
-        this.dexterity = dexterity;
-        this.agility = agility;
-        this.Hero_Name = Hero_Name;
-        this.Title=Title;
+    public Hero(InputStream in) {
+        setHealth();
+        setStrength();
+        setIntelligence();
+        setDexterity();
+        setAgility();
+        setDamage();
     }
 
-        public Hero(InputStream in) {
-        }
+    private Random rand = new Random();
 
-    public void Display_Info()
-    {
-
-        System.out.println(health);
-        System.out.println(strength);
-        System.out.println(intelligence);
-        System.out.println(dexterity);
-        System.out.println(agility);
-
-    }
-    public void Set_Info(){
-        Scanner sc = new Scanner(System.in);
-        Hero_Name = sc.nextLine();
-        Title = sc.nextLine();
-        health = sc.nextInt();
-        strength = sc.nextInt();
-        intelligence = sc.nextInt();
-        dexterity = sc.nextInt();
-        agility = sc.nextInt();
-
-
-
+    public void setHealth() {
+        this.health = 100;
     }
 
-
-
-        public void setHealth(int health) {
-        this.health = health;
-    }
-    public void setStrength(int strength) {
-        this.strength = strength;
-    }
-    public void setIntelligence(int intelligence) {
-        this.intelligence = intelligence;
-
-    }
-    public void setDexterity(int dexterity) {
-        this.dexterity = dexterity;
-    }
-    public void setAgility(int agility) {
-        this.agility = agility;
+    public void setStrength() {
+        this.strength = rand.nextInt(101);
     }
 
-    public void setHero_Name(String Hero_Name) {
-        this.Hero_Name = Hero_Name;
-    }
-    public void setTitle(String spec) {
-        this.Title = Title;
+    public void setIntelligence() {
+        this.intelligence = rand.nextInt(101);
     }
 
-    public String getHero_Name() {
-        return Hero_Name;
+    public void setDexterity() {
+        this.dexterity = rand.nextInt(101);
     }
 
-    public String getTitle() {
-        return Title;
+    public void setAgility() {
+        this.agility = rand.nextInt(101);
+    }
+
+    public void setDamage() {
+        this.damage = (strength * 1.5) + (dexterity * 1.2) + (agility * 1.1) + (intelligence * 0.8);
     }
 
     public int getHealth() {
         return health;
     }
+
     public int getStrength() {
         return strength;
     }
+
     public int getIntelligence() {
         return intelligence;
     }
+
     public int getDexterity() {
         return dexterity;
     }
+
     public int getAgility() {
         return agility;
     }
 
+    public double getDamage() {
+        return damage;
+    }
 
-
-
-
-
+    public void Display_Info() {
+        System.out.println(health);
+        System.out.println("STR: " + strength);
+        System.out.println("INT: " + intelligence);
+        System.out.println("DEX: " + dexterity);
+        System.out.println("AGI: " + agility);
+        System.out.println("DMG: " + damage);
+    }
 
 }
