@@ -8,7 +8,7 @@ public class Book {
     }
 
     public String getBookInfo() {
-        return  String.format("Book: "+"  "+title+"  "+ "by" + "  "+author+"  ");
+        return  String.format("Book1: "+"  "+title+"  "+ "by" + "  "+author+"  ");
     }
     public void displayInfo(){
         System.out.println(getBookInfo());
