@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Advanced Smart Home Automation System/Advanced Smart Home Automation System.iml" filepath="$PROJECT_DIR$/Advanced Smart Home Automation System/Advanced Smart Home Automation System.iml" />
       <module fileurl="file://$PROJECT_DIR$/Animal Kingdom/Animal Kingdom.iml" filepath="$PROJECT_DIR$/Animal Kingdom/Animal Kingdom.iml" />
       <module fileurl="file://$PROJECT_DIR$/Animal Kingdom Interface/Animal Kingdom Interface.iml" filepath="$PROJECT_DIR$/Animal Kingdom Interface/Animal Kingdom Interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/Car_Showroom/Car_Showroom.iml" filepath="$PROJECT_DIR$/Car_Showroom/Car_Showroom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Digital Media Libary System/Digital Media Libary System.iml" filepath="$PROJECT_DIR$/Digital Media Libary System/Digital Media Libary System.iml" />
       <module fileurl="file://$PROJECT_DIR$/Family Tree/Family Tree.iml" filepath="$PROJECT_DIR$/Family Tree/Family Tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/untitled/First Exercieses.iml" filepath="$PROJECT_DIR$/untitled/First Exercieses.iml" />
       <module fileurl="file://$PROJECT_DIR$/Galactic.TransportationHUB/Galactic.TransportationHUB.iml" filepath="$PROJECT_DIR$/Galactic.TransportationHUB/Galactic.TransportationHUB.iml" />
@@ -22,6 +24,7 @@
       <module fileurl="file://$PROJECT_DIR$/The Dungeon Explorer/The Dungeon Explorer.iml" filepath="$PROJECT_DIR$/The Dungeon Explorer/The Dungeon Explorer.iml" />
       <module fileurl="file://$PROJECT_DIR$/The Orchestra of Instruments/The Orchestra of Instruments.iml" filepath="$PROJECT_DIR$/The Orchestra of Instruments/The Orchestra of Instruments.iml" />
       <module fileurl="file://$PROJECT_DIR$/The Tale of the Egg/The Tale of the Egg.iml" filepath="$PROJECT_DIR$/The Tale of the Egg/The Tale of the Egg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/The Treasure Chest Game/The Treasure Chest Game.iml" filepath="$PROJECT_DIR$/The Treasure Chest Game/The Treasure Chest Game.iml" />
       <module fileurl="file://$PROJECT_DIR$/The Vehicle Factory/The Vehicle Factory.iml" filepath="$PROJECT_DIR$/The Vehicle Factory/The Vehicle Factory.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/UACS-5343.iml" filepath="$PROJECT_DIR$/.idea/UACS-5343.iml" />
     </modules>
