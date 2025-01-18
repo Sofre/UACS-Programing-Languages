@@ -1,8 +1,6 @@
-import java.io.Serializable;
-
-public class Student implements Serializable {
-    String name;
-    String phoneNum;
+public class Student {
+    public String name;
+    public String phoneNum;
     int indexNum;
     transient int recordNum;
 
